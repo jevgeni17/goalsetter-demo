@@ -1,0 +1,9 @@
+{% extends "app/base.html" %}
+
+    {% block content %}
+        {% if user.is_authenticated %}
+            <h1>My goals:</h1>
+        {% else %}
+            <h1>not user</h1>
+        {% endif %}
+    {% endblock content %}
